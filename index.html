@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Tutorial 1</title>
+<head>
+<style>
+*{margin:0px; padding:0px;}
+h1{background-color:blue; height:60px; text-align:center; padding:15px; font-size:60px; color:white;}
+ .nav{width:100%; height:50px; background:green; float:left; line-height:50px; font-size:20px; color:white;}
+.nav ul{list-style:none; width:300px;}
+.nav ul li{padding:0px 10px; float:left; line-height:50px;}
+.nav ul li ul{position:absolute; padding:0px; margin:0px;}
+.nav ul li ul li{float:left; border:1px solid red; padding:15px 15px; display:none;}
+.nav ul li:hover ul li{display:block; background:black;}
+.nav ul li:hover{background-color:red;}
+.container{width:100%; height:500px;float:left;}
+.container form {font-size:20px;}
+
+</style>
+<body>
+<h1><u>My New Project</u></h1>
+<div class="nav">
+<ul>
+   <li>Home
+   <ul>
+    <li>About us</li>
+    <li>Contact us</li>
+	</ul>
+	</li>
+    <li>Service</li>
+	<li>Plan</li>
+    <li>projects</li>
+	</ul>
+</div>
+<div class= "container">
+<section style="width:33.4%;background-color:orange;height:750px;float:left;">
+<h3 style="text-align:center;font-size:25px;"><u>REGISTRATION FORM</u></h3>
+<fieldset>
+<legend>REGISTRATION FORM</legend>
+<form action="/action_page.php">
+  <label for="fname">Registration id</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Password</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</fieldset> 
+</section>
+
+
+<section style="width:33.3%;background-color:pink;height:750px;float:right;">
+<h3 style="text-align:center;font-size:25px;color:red;"><u>PERSONAL DETAILS:</U></h3>
+<fieldset>
+<legend>LOGIN FORM</legend>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  
+  <label for="fname">Father's Name:</label><br>
+  <input type="text" value ="First name">
+  <input type ="text"value="Last name"><br>
+  
+  <label for="fname">Mother's Name:</label><br>
+  <input type="text" value ="First name">
+  <input type ="text"value="Last name"><br>
+  
+  <label for="text">E-mail Id-</label>
+  <input type="Email"value=""><br>
+  
+  <label for ="text">Contact-No.-</label>
+  <input type="text" value=""><br>
+  
+  <label for ="D.O.B">D.O.B-</label>
+  <input type="date" id="datemax" name="datemax" max="2030-12-01"><br>
+  
+   <label for="Gender">Gender-</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+  
+  <label for="Language">Language-</label><br>
+  <input type="checkbox" id="Bengali" name="Language" value="Bengali">
+  <label for="Bengali">Bengali</label>
+  <input type="checkbox" id="English" name="language" value="English">
+  <label for="English">English</label>
+  <input type="checkbox" id="Hindi" name="Language" value="Hindi">
+  <label for="Hindi">Hindi</label><br>
+  
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br>
+  
+  <label for="vol">Volume limit:</label>
+  <input type="range" id="vol" name="vol" min="0" max="50"><br>
+  
+  <label for="gsearch">Google:</label>
+  <input type="search" id="gsearch" name="gsearch"><br>
+  
+  <label for="time">select the time:</label>
+  <input type="time" id="time" name="time"><br>
+  
+  <label for="week">select a week:</label>
+  <input type="week" id="week" name="week"><br>
+  
+  <label for="homepage">select a homepage:</label>
+  <input type="homepage" id="url" name="url"><br>
+  
+  <label for="color">select a color:</label>
+  <input type="color" id="color" name="color"><br>
+   <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30"><br>
+  
+  <label for="cars">Favourite car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="Bmw">BMW</option>
+    <option value="jaguar">Jaguar</option>
+    <option value="audi">Audi</option>
+  </select><br>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+  
+  
+  
+   <label for="I Agree"> I Agree All terms and condition</label>
+  <input type="checkbox" id="I Agree" name="I Agree" value="I Agree"><br><br>
+  
+  <input type="submit" value="Submit">
+  
+  </form>
+</fieldset> 
+
+</section>
+<section style="width:33.3%;background-color:lightblue;height:750px;float:left;">
+<h3 style="text-align:center;font-size:25px;color:blue;"><u>LOGIN FORM</u></h3>
+<fieldset>
+<legend>SECURITY ID</legend>
+<form action="/action_page.php">
+  <label for="LOGIN ID">Login Id</label><br>
+  <input type="text" id="login id" name="login id"><br>
+  <label for="password">Password</label><br>
+  <input type="text" id="password" name="password"><br><br>
+  <input type="submit" value="Log In" style="background-color:red; color:white" >  
+</form>
+</fieldset> 
+</section>
+
+
+
+
+
+
+
+
+</div>
+
+ 
